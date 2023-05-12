@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BB85C3002A0DCC5C00A591F5 /* WholeModule in Frameworks */ = {isa = PBXBuildFile; productRef = BB85C2FF2A0DCC5C00A591F5 /* WholeModule */; };
 		BB9FBEB62A0B4F3E00F844AD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9FBEB52A0B4F3E00F844AD /* AppDelegate.swift */; };
 		BB9FBEB82A0B4F3E00F844AD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9FBEB72A0B4F3E00F844AD /* SceneDelegate.swift */; };
 		BB9FBEBA2A0B4F3E00F844AD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9FBEB92A0B4F3E00F844AD /* ViewController.swift */; };
@@ -31,6 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB85C3002A0DCC5C00A591F5 /* WholeModule in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +44,7 @@
 			children = (
 				BB9FBEB42A0B4F3E00F844AD /* TestWholeModule */,
 				BB9FBEB32A0B4F3E00F844AD /* Products */,
+				BB9FBED42A0B6E5A00F844AD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +70,13 @@
 			path = TestWholeModule;
 			sourceTree = "<group>";
 		};
+		BB9FBED42A0B6E5A00F844AD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -83,6 +93,9 @@
 			dependencies = (
 			);
 			name = TestWholeModule;
+			packageProductDependencies = (
+				BB85C2FF2A0DCC5C00A591F5 /* WholeModule */,
+			);
 			productName = TestWholeModule;
 			productReference = BB9FBEB22A0B4F3E00F844AD /* TestWholeModule.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +124,9 @@
 				Base,
 			);
 			mainGroup = BB9FBEA92A0B4F3E00F844AD;
+			packageReferences = (
+				BB85C2FE2A0DCC5C00A591F5 /* XCRemoteSwiftPackageReference "WholeModule" */,
+			);
 			productRefGroup = BB9FBEB32A0B4F3E00F844AD /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -358,6 +374,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		BB85C2FE2A0DCC5C00A591F5 /* XCRemoteSwiftPackageReference "WholeModule" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "git@github.com:chenyunguiMilook/WholeModule.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		BB85C2FF2A0DCC5C00A591F5 /* WholeModule */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BB85C2FE2A0DCC5C00A591F5 /* XCRemoteSwiftPackageReference "WholeModule" */;
+			productName = WholeModule;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = BB9FBEAA2A0B4F3E00F844AD /* Project object */;
 }
